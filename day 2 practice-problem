@@ -1,0 +1,280 @@
+*********************DAY 2 PRACTICE PROBLEM**************************
+  
+Peoblem 1:
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    int year=kbd.nextInt();
+        if(year%400==0 || year%100!=0&&year%4==0)
+        System.out.println("leap year");
+        else
+        System.out.println("non leap year");
+	}
+}
+input value:2024
+output value:leap year
+    
+Problem 2:
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner kbd=new Scanner(System.in);
+	    char choice=kbd.next().charAt(0);
+        switch(choice){
+            case 'A': System.out.println("Withdraw"); break;
+            case 'B': System.out.println("Deposit"); break;
+            case 'C': System.out.println("Balance Check"); break;
+            default: System.out.println("Thank you please enter A-C");
+        }
+        
+	}
+  input value:C
+  output value:Balance Check
+
+Problem 3:
+import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    // Scanner kbd=new Scanner(System.in);
+	    // char choice=kbd.next().charAt(0);
+       // for(int i=1;i<5;i++)
+    //    int i=1;
+    //    while(i<5){ 
+    //    System.out.println("Selvi");
+    //    i++;
+    //    }
+    int i=1;
+    do { 
+        System.out.println("Selvi");
+        i++;
+    } while (i<5);
+        
+        
+	}
+}
+  output value:
+  selvi
+  selvi
+  selvi
+  selvi
+  selvi
+
+Problem 4:
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=1;i<=n;i++)
+        System.out.print(i+" ");  
+	}
+}
+  input value:10
+  output value:1 2 3 4 5 6 7 8 9 10
+
+ Problem 5:
+import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=10;i>=n;i--)
+        System.out.print(i+" ");  
+	}
+}
+  input value:1
+  output value:10 9 8 7 6 5 4 3 2 1
+
+Problem 6:
+  import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    // Scanner scan = new Scanner(System.in);
+        // char n = scan.next().charAt(0);
+        for(char i='A';i<='Z';i++)
+        System.out.print(i+" ");
+    }
+}
+  input value:A-Z
+  output value: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+
+Problem 7:
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        char n = scan.next().charAt(0);
+        for(char i='Z';i>=n;i--)
+        System.out.print(i+" ");
+    }
+}
+input value:Z-A
+output value:Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
+
+Problem 8:
+  import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    // Scanner scan = new Scanner(System.in);
+        // char n = scan.next().charAt(0);
+        for(char i='a';i<='z';i++)
+        System.out.print(i+" ");
+    }
+}
+  input value:a-z
+  output value: a b c d e f g h i j k l m n o p q r s t u v w x y z
+  
+  Problem 9: 
+import java.util.Scanner;
+  
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        char n = scan.next().charAt(0);
+        for(char i='z';i>=n;i--)
+        System.out.print(i+" ");
+    }
+}
+input value:z-a
+output value: z y x w v u t s r q p o n m l k j i h g f e d c b a
+
+Problem 10:
+  import java.util.Scanner;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for(int i=1;i<=n;i++)
+        if(i%2==0)
+        {
+            //printing even numbers in 1-N
+            System.out.print(i);
+        }
+	}
+  input value:10
+  output value: 2 4 6 8 10
+
+  Problem 11:
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int i=1;i<=n;i++){
+        for( int j=1;j<=n;j++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+  input value:3
+  output value:***
+                 ***
+                 ***
+
+  Problem 12:
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+  input value:3
+  output value:*
+                 **
+                 ***
+
+Problem 13:
+  import java.util.Scanner;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+        int n = scan.nextInt();
+        for( int row=1;row<=n;row++){
+        for( int col=1;col<=n-row;col++)
+        System.out.print(" ");
+         for( int col=1;col<=row;col++)
+        System.out.print("*");
+        System.out.println();
+        }
+    }
+}
+input value:3
+output value:  *
+                **
+               ***
+
+Problem 14:
+  import java.util.Scanner;
+
+    public class Main
+    {
+        public static void main(String[] args)
+        {
+            Scanner scan =new Scanner(System.in);
+            int n = scan.nextInt();
+            for(int row=1;row<=n;row++){
+                for(int col=0;col<=n;col++){
+                if(row==1||col==1||row==n||col==n)
+                System.out.print("*");
+                else
+                System.out.print(" ");
+            }
+            System.out.println();
+        }
+        }
+    }
+  input value:4
+  output value:  ****
+                 *  *
+                 *  *
+                 ****
+
+Problem 15:
+  import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+          
+            System.out.println();
+        }
+    }
+}
+      
+      
+ 
+               
