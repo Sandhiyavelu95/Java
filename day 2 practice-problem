@@ -1,6 +1,6 @@
 *********************DAY 2 PRACTICE PROBLEM**************************
   
-Peoblem 1:
+Problem 1:
 import java.util.Scanner;
 public class Main
 {
@@ -65,7 +65,6 @@ public class Main
 
 Problem 4:
 import java.util.Scanner;
-
 public class Main
 {
 	public static void main(String[] args) {
@@ -78,9 +77,8 @@ public class Main
   input value:10
   output value:1 2 3 4 5 6 7 8 9 10
 
- Problem 5:
+Problem 5:
 import java.util.Scanner;
-
 public class Main
 {
 	public static void main(String[] args) {
@@ -94,8 +92,7 @@ public class Main
   output value:10 9 8 7 6 5 4 3 2 1
 
 Problem 6:
-  import java.util.Scanner;
-
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -109,7 +106,7 @@ public class Main
   output value: A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
 
 Problem 7:
-  import java.util.Scanner;
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -123,8 +120,7 @@ input value:Z-A
 output value:Z Y X W V U T S R Q P O N M L K J I H G F E D C B A
 
 Problem 8:
-  import java.util.Scanner;
-
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -137,9 +133,8 @@ public class Main
   input value:a-z
   output value: a b c d e f g h i j k l m n o p q r s t u v w x y z
   
-  Problem 9: 
-import java.util.Scanner;
-  
+Problem 9: 
+import java.util.Scanner;  
 public class Main
 {
 	public static void main(String[] args) {
@@ -153,8 +148,7 @@ input value:z-a
 output value: z y x w v u t s r q p o n m l k j i h g f e d c b a
 
 Problem 10:
-  import java.util.Scanner;
-
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -170,8 +164,8 @@ public class Main
   input value:10
   output value: 2 4 6 8 10
 
-  Problem 11:
-  import java.util.Scanner;
+Problem 11:
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -189,8 +183,8 @@ public class Main
                  ***
                  ***
 
-  Problem 12:
-  import java.util.Scanner;
+Problem 12:
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -209,7 +203,7 @@ public class Main
                  ***
 
 Problem 13:
-  import java.util.Scanner;
+import java.util.Scanner;
 public class Main
 {
 	public static void main(String[] args) {
@@ -230,9 +224,8 @@ output value:  *
                ***
 
 Problem 14:
-  import java.util.Scanner;
-
-    public class Main
+import java.util.Scanner;
+public class Main
     {
         public static void main(String[] args)
         {
@@ -256,8 +249,7 @@ Problem 14:
                  ****
 
 Problem 15:
-  import java.util.Scanner;
-
+import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
