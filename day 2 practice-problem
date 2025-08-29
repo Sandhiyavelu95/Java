@@ -179,7 +179,7 @@ public class Main
     }
 }
   input value:3
-  output value:***
+  output value:  ***
                  ***
                  ***
 
@@ -198,7 +198,7 @@ public class Main
     }
 }
   input value:3
-  output value:*
+  output value:  *
                  **
                  ***
 
@@ -219,7 +219,7 @@ public class Main
     }
 }
 input value:3
-output value:  *
+output value:    *
                 **
                ***
 
