@@ -266,6 +266,50 @@ public class Main {
         }
     }
 }
+
+**************HOMEWORK PROBLEM***************
+
+Problem 1:
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+        int n = scanner.nextInt();
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n - i; j++) {
+                System.out.print(" ");
+            }
+            for (int k = 1; k <= 2 * i - 1; k++) {
+                System.out.print("*");
+            }
+          
+            System.out.println();
+        }
+        for( int i=1;i<=4;i++){
+         for( int j=1;j<=3;j++)
+           System.out.print("*");
+           for (int j = 1; j <= 3; j++) 
+                System.out.print(" ");
+                
+         for( int j1=1;j1<=3;j1++)
+           System.out.print("*");
+           System.out.println();
+        }
+    }
+}
+
+Problem 2:
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args) {
+       Scanner scan = new Scanner(System.in);
+       String name = scan.next();
+        for (int  i = 1; i <= name.length();i++)
+                System.out.println(name.substring(0,i));
+    }
+}
+
+
       
       
  
