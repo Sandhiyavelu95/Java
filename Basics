@@ -1,0 +1,467 @@
+/* sample question
+
+public class hello {
+    public static void main(String args[])
+    {
+        int a = 10;
+        int b = 20;
+        int c = 30;
+        int d = a*b*c;
+        System.out.println(d);
+    }
+    
+}
+    */
+
+/* question n0 :01 
+Get input for variable :Name and Age.
+Sample input :
+Jhon
+24
+Sample Output:
+My name is Jhon
+My age is 24
+
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[])
+    {
+       Scanner nd=new Scanner(System.in);
+       String a = nd.nextLine();
+       int b = nd.nextInt();
+       nd.nextLine();   ////beacuse  "int ku apro string user input vankurapo  name.nextLine() use pannanum" use pannalana string ku user input kekathu alternative ah oru line anga store aakirum bcus of the int 
+       String address= nd.nextLine();
+       System.out.println("My name is"+" "+a);
+       System.out.println("My age is"+" " +b); 
+       System.out.println("My address is"+" " +address);
+
+    }
+}
+    */
+    
+
+/*question no 02:
+
+get input for 3 integer variables : a,b,c .now multiply all variable and store it in d. now add all variable and store it in e.
+now divide d by e.
+
+Sample input 
+10
+20
+10
+
+Sample output:
+50
+
+import java.util.Scanner;
+public class hello{
+    public static void  main(String args[])
+    {
+        Scanner nd = new Scanner(System.in);
+        int a = nd.nextInt();
+        int b = nd.nextInt();
+        int c = nd.nextInt();
+        int d = a*b*c;
+        int e = a+b+c;
+        System.out.print(d/e);
+    }
+}
+     */
+
+
+    /*question no :03
+    
+    get input for 3 variables:name,score,department.let the user enter the score for 100 marks,you convert it for 10 and print it
+    
+    Sample i/p:
+    john
+    56
+    computer
+    
+    sample o/p:
+    My name is john
+    my score is 5.6/10
+    My department is Computer
+
+import java.util.Scanner;
+public class hello{
+    public static void  main(String args[])
+    {
+        Scanner nd = new Scanner(System.in);
+        String name = nd.nextLine();
+        double score = nd.nextDouble();
+        nd.nextLine();
+        String dept = nd.nextLine();
+        System.out.println("My name is"+" "+name);
+        System.out.println("My score is"+" "+score/10);
+        System.out.println("My department is"+" "+dept);
+    }
+}
+    */
+
+/* question no :04
+
+get i/p from user the variable called maghana.
+
+if meghana is "dead" print("surya meets ramya")
+else print("surya weds meghana")
+
+import java.util.Scanner;
+public class hello{
+    public static void  main(String args[])
+    {
+        Scanner nd = new Scanner(System.in);
+        String meghana = nd.nextLine();
+        if(meghana.equals("dead")){
+            System.out.println("Surya meets ramya");
+        }
+        else{
+            System.out.println("Surya weds meghana");
+        }
+    }
+}
+    */
+
+/* question no :05
+
+if the score is less than 50,print"you need to improve."
+if score is between 50 and 70 (inclusive),print "good job
+if the score is greater than 70,print 
+"excellent performance!"
+
+
+import java.util.Scanner;
+public class hello{
+    public static void  main(String args[])
+    {
+        Scanner nd = new Scanner(System.in);
+        int score = nd.nextInt();
+        if(score<50){
+            System.out.println("You need to improve");
+        }
+            else if(score == 50 || score>50 && score<70){
+                System.out.println("Good job");
+            }
+            else if(score>70){
+                System.out.println("Excellent performance!");
+            }
+        
+    }
+}*/
+   /*question no :06 
+
+import java.util.Scanner;
+public class hello{
+    public static void  main(String args[])
+    {
+        Scanner nd = new Scanner(System.in);
+        int salary = nd.nextInt();
+        int age = nd.nextInt();
+        if(salary>=20000 || age <=25)
+        {
+            int reqamt = nd.nextInt();
+            if(reqamt<=50000){
+                System.out.print("you are eligible for loan");
+            }
+            else{
+                System.out.print("maximum loan amount is 50,000");
+            }
+        }
+        else{
+            System.out.print("ypu are not eligible for loan");
+        }
+    }
+}
+    */
+
+   /* question no :07 
+
+   get input for the variable a and b and print the number from a to b
+sample i/p:5,10
+sample o/p : 
+5
+6
+7
+8
+9
+10 
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int a = nd.nextInt();
+        int b = nd.nextInt();
+        for(int i=a;i<=b;i++){
+            System.out.println(i);
+        }
+    }
+}
+    */
+   /*question no :08
+   print even no b/w 1 to 10 using for loop and if else 
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int a = nd.nextInt();
+        int b = nd.nextInt();
+        int count =0;
+        for(int i=a;i<=b;i++){
+            if(i%2==0){
+              System.out.println("Even no:"+i);
+              
+            }
+             else{
+                 System.out.println("Odd no:"+i);
+                 count =count+1;
+             }
+           
+        }
+         System.out.println(count);
+    }
+}
+    */
+   /*question no :09
+
+   print no which are divisible by both 3 and 5 range 1 to 100
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int a = nd.nextInt();
+        int b = nd.nextInt();
+        for(int i=a;i<=b;i++){
+            if(i%3==0 && i%5==0 ){
+                System.out.println(i);
+            }
+        }
+    }
+}
+    */
+
+                /////*********Array **********/////
+    
+    /// Syntax :int[] arr = new int[size];
+
+/*import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){ 
+        String[] playlist = new String[3];
+        playlist[1]="song 1";
+        //String[] playlist ={"song1","song2";"song3"};(one of the way of creating array)
+        System.out.println(playlist[1]);
+    }
+}  
+*/
+
+/*question no : 10
+
+create an integer array,Get i/p for 5 no and print their sum or total.
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){ 
+        int[] arr = new int[5];
+        arr[0]=0;
+        arr[1]=1;
+        arr[2]=3;
+        arr[3]=3;
+        arr[4]=4;
+        int sum = arr[0]+arr[1]+arr[2]+arr[3]+arr[4];
+        System.out.println(sum);
+    }
+}
+    */
+
+/*question no :11
+
+get i/p for 5 no using array and for loop
+
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int[] ram = new int[5];
+        for(int i=0;i<=4;i++){      ///for loop  use panni i/p vanguren
+            ram[i]=nd.nextInt();
+        }
+        for(int i=0;i<=4;i++){    // for loop use panni print pandra
+            System.out.println(ram[i]);
+        }     
+    }
+}
+
+*/
+
+/*question no : 12 
+
+print 2 table using for loop
+
+import java.util.Scanner;
+public class hello{
+    public static  void main(String args[]){
+        Scanner nd= new Scanner(System.in);
+        int n = nd.nextInt();  //10  
+        for(int i=0;i<=n;i++){
+            int mul = i*2;
+            System.out.println(i+"*"+"2"+"="+mul);
+        }
+    }
+}
+    */
+
+/*question no :13 
+
+get i/ size for an array
+get i/p for each element 
+find the middle element in array
+
+
+import java.util.Scanner;
+public class hello{
+    public static  void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int size = nd.nextInt();
+        int[] arr = new int[size];
+        for(int i =0;i<=size-1;i++){   // arr i/p user ta iruthu vanguren
+            arr[i]=nd.nextInt();
+        }
+        for(int i=0;i<=size-1;i++){    // user ta iruthu vangu na arr ah print pandra
+            System.out.println(arr[i]);
+        }
+        int mid = (arr[0]+arr[size-1])/2;  //mid value find pandra
+        System.out.println(mid);
+    }
+}
+
+*/
+
+/*question no : 14
+
+print this o/p
+***
+***
+***
+
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int n = nd.nextInt();
+        for(int i=0;i<n;i++){
+            for(int j=0;j<n;j++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+    */
+/*question no : 15
+
+print this o/p
+*
+**
+*** 
+
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int n = nd.nextInt();
+        for(int j=1;j<=n;j++){
+            for(int i=1;i<=j;i++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+*/
+
+/*question no : 16
+
+print this o/p
+***
+**
+*
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int n = nd.nextInt();
+        for(int j=3;j>n;j--){
+            for(int i=1;i<=j;i++){
+                System.out.print("*");
+            }
+            System.out.println(" ");
+        }
+    }
+}
+    */
+
+/* question no : 17
+
+print no from 1 to 10 in for loop and in while loop
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int n = nd.nextInt();
+        int i=1;
+        for ( i=1;i<=n;i++){
+          System.out.println(i);
+        }
+        int j =1;
+        while(j<=n){
+            System.out.println(j);
+            j++;
+        }
+    }
+}
+*/
+
+//////*********generate a random number until the generated random no was 5*********//////
+
+/*import java.util.Random;
+public class hello{
+    public static void main (String args[]){
+        Random rand = new Random();
+        int n = 0;
+        while(n!=5){
+         n= rand.nextInt(10);
+        System.out.println(n);
+        }
+    }
+}
+   
+*/
+/*question no : 18
+
+get i/p for variable a . i/p should be greater than 10;
+if i/p is not greater than 10 ask the user to re enter until he types the right i/p
+
+import java.util.Scanner;
+public class hello{
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int a=0;
+        do{
+            System.out.print("enter the no > 10");
+            a=nd.nextInt(); 
+        }
+        while(a<10);
+
+    }
+}
+
+*/
