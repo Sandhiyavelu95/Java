@@ -1,0 +1,311 @@
+ /////////////////******************functions() *******************/////////////////
+
+
+
+Question no :01
+
+public class hello {
+
+    //creating function()
+
+    void greeting(){  
+
+        System.out.println("good morning");
+        dummy();
+    }
+
+    void dummy(){
+
+        System.out.println("heyy ");
+        
+    }
+    public static void main (String args[]){
+
+        //creating object to call the function
+
+        demo obj1 = new demo();
+        obj1.greeting();
+       // obj1.dummy();
+    }
+    
+}
+
+
+Question no :02
+
+public class hello {
+
+    //creating function()
+    //creating static function to call inside the static main function
+    static void greeting(){  
+
+        System.out.println("good morning");
+        
+    }
+
+    static void dummy(){
+
+        System.out.println("heyy ");
+        
+    }
+    public static void main (String args[]){
+
+        //static function was created so no need to create object
+        greeting();
+        dummy();
+       
+    }
+    
+}
+
+
+Question no :03
+
+public class hello{
+     void iphone(){
+        System.out.print("this is iphone");
+     }
+     void oppo(){
+        System.out.println("this is oppo");
+     }
+     void realme(){
+        System.out.println("this is realme");
+     }
+
+     public static void main(String args[]){
+        demo obj1 = new demo();
+        obj1.realme();
+     }
+}
+     
+
+Question no :04
+
+create a class called addition 
+this class should have 2 variables 
+ a=10
+ b=20
+  create a func called sum which should add a & b print the total o/p call the sum func from main method
+  
+  
+
+  public class hello{
+
+    void sum(){
+
+        int a=10;
+        int b=20;
+        int sum = a+b;
+        System.out.println(sum);
+    }
+    public static void main(String args[]){
+
+        hello obj1 = new hello();
+        obj1.sum();
+    }
+  }
+
+  
+
+Question no :05
+
+create a class called garden
+this class should have 2 variables 
+ apple_price =20
+ apple_count=5
+  create a func called total_money which should mul count with price and display the total amt
+
+  public class hello{
+
+    void total_money(){
+
+        int apple_price = 20;
+        int apple_count = 5;
+        System.out.println(apple_count*apple_price);
+    }
+
+    public static void main(String args[]){
+        
+        hello obj1 = new hello();
+        obj1.total_money();
+    }
+  }
+
+  
+
+       ///////////////*******************function with parameter*********************////////////////////
+  
+
+Question no :06
+
+public class hello{
+    void getsoap(int money){
+
+        System.out.println(money);
+        System.out.println("soap purchased");
+    }
+    void getchocolate(int money){   //(int money) parameter/arguments
+
+        System.out.println(money);
+        System.out.println("chocolate purchased");
+    }
+    public static void main(String args[]){
+
+        hello obj1=new hello();
+        obj1.getsoap(40);
+        obj1.getchocolate(100);
+    }
+}
+
+
+
+Question no :07
+
+create a func called sum,send two no from main func and add these no using func and print it.
+like wise create func like sub ,mul,div 
+
+public class hello{
+
+    void sum(int num1 , int num2){
+        System.out.println(num1+num2);
+         System.out.println(num1-num2);
+          System.out.println(num1*num2);
+           System.out.println(num1/num2);
+    }
+    public static void main(String args[]){
+        hello obj1 = new hello();
+        obj1.sum(10,20);
+    }
+}
+
+
+
+  ///////////***************** "return" keyword *******************/////////
+ 
+  Question no :08
+
+public class hello{
+    int getsoap(int money){
+        int soap_price = 18;
+        int rem =  money -  soap_price ;
+        return rem;
+      }
+       public static void main(String args[]){
+        hello obj1 = new hello();
+        int reminder = obj1.getsoap(20);
+        System.out.println(reminder);
+  }
+}
+
+
+
+Question no :09
+
+get two nos num1 and num2 from main func and add both nos in func and return it to main func
+
+public class hello{
+    int sum (int num1 ,int num2){
+        int sum = num1 + num2;
+        return sum;
+
+    }
+    public static void main(String args[]){
+        hello obj1 = new hello();
+        int total = obj1.sum(10,20);
+        System.out.println(total);
+    }
+}
+
+
+Question no :10
+
+create a func called getname() , which should retuen your name
+
+public class hello{
+    String getname(String name){
+        return name;      //main func la iruthu i/p vangi return pandra
+    }
+    public static void main(String args[]){
+        hello obj1=new hello();
+        String name = obj1.getname("rio");
+        System.out.println(name);
+    }
+}
+
+
+
+Question no :11
+
+create a function called getphone() which should return you the phone number
+
+public class hello{
+    int getnumber(){
+        return 98;   //func that return to main func
+    }
+    public static void main(String args[]){
+        hello obj1=new hello();
+        int num = obj1.getnumber();
+        System.out.println(num);
+    }
+}
+
+
+Question no :12
+
+create a class called 'find" with main func
+create a func calledd evenorodd with integer parameter called int num
+inside main func get integer i/p from user.
+pass that i/p to the evenorodd func and let the func decide whether the no is even or odd
+
+
+
+import java.util.Scanner;
+public class hello{
+    void evenorodd(int num){
+        if(num%2==0){
+            System.out.println("even");
+        }
+        else{
+            System.out.println("odd");
+        }
+    }
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int num = nd.nextInt();
+        hello obj1 = new hello();
+         obj1.evenorodd(num);
+    }
+}
+
+
+
+Question no :13
+
+create a class called "school" with main func
+create a func called passorfail which should return the string "pass/fail"
+inside main func get integer i/p from user for total mark.
+pass that i/p to the passorfail func and let the func decide whether std is passorfail
+
+
+import java.util.Scanner;
+public class hello{
+    String passorfail (int tot_mark){
+        if(tot_mark>35){
+            return "pass";
+        }
+        else{
+            return"fail";
+        }
+
+    }
+    public static void main(String args[]){
+        Scanner nd = new Scanner(System.in);
+        int tot_mark = nd.nextInt();
+        hello obj = new hello();
+        String res = obj.passorfail(tot_mark);
+        System.out.println(res);
+
+    }
+
+}
+    
