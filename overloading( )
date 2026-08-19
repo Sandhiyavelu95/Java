@@ -1,0 +1,19 @@
+//////**********************method ovrloading  or function overloading ***********************///////////////
+
+we can't create a duplicate function in java.
+having a multiple method with the same name but different paramater in the same class.
+
+public class hello{
+
+    void display(){                      //function with same name but with different parameter
+        System.out.println("one");
+    }
+    void display(int a){                 //this is called method or function overloading
+        System.out.println("two");
+    }
+    public static void main(String args[]){
+        hello obj = new hello();
+        obj.display(2);
+
+}
+}
