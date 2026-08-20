@@ -1,0 +1,80 @@
+/////////////****************constructor*******************/////////
+
+
+Question no : 01
+
+public class hello{
+
+    int marks;
+    String name;
+
+    // create constructor (class name and constructor name should be same)
+
+    hello(){                      //can create multiple constructor with same name but with different paramater
+
+        System.out.println("empty parameter");
+    }
+
+    hello(int a)
+    {
+        System.out.println(a);        //passing value using constructor
+        System.out.println("hello world");
+    }
+    
+    public static void main(String args[]){
+
+        hello obj1 = new hello(10); 
+        hello obj2 = new hello();       //if there is two obj defaultly two times the constructor will called
+        
+
+        System.out.println(obj1.marks);   //if we didn't declare value for variable automatically "0" will print
+        System.out.println(obj1.name);    //for string "null"  will print
+    }
+}
+
+
+
+
+Question no : 02
+
+   //creting obj using class for getting values form user
+   //getting value using constructor same as class but does not have return type
+
+public class hello{
+
+    int mark;
+    String name;
+
+    hello(int a,String b){
+        System.out.println("mark : " + a);
+        System.out.println("name : " +b);
+    }
+    public static void main(String args[]){
+        hello obj1=new hello(33,"rio");   //setting value using constructor
+
+    }
+}
+
+
+Question no : 03
+
+
+public class hello{
+
+    String myname;               //after creating variable defaultly the constructor was created
+
+    hello(){             //class name and constructor name should be same
+
+        System.out.println("hello world");   //2.so constructor called 1st.
+    }
+
+    void display(){
+
+        System.out.println("display");   //4.display was printed
+    }
+    public static void main(String args[]){
+        hello obj1 = new hello();        // 1. obj was created 
+        obj1.display();                 // 3. calling the function
+    }
+}
+    
