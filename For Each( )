@@ -1,0 +1,24 @@
+////***************for each loop*****************////
+
+
+public class hello{
+    public static void main(String args[]){
+
+        //create a array
+        int num[] = {1,2,3,4,5};
+
+        //normal for loop 
+
+        //for(int i=0;i<5;i++){
+          //  System.out.println(num[i]);
+        //}
+
+        //creating for each loop
+        for(int var : num){
+           System.out.println(var);
+        }
+    }
+}
+
+
+
