@@ -1,0 +1,52 @@
+ /////////***********This keyword ************////////////
+    
+Question no : 01
+
+public class hello{
+
+    String myname = null;
+
+    void setname(String myname){
+
+        // System.out.println(myname);      //if you give like this "null" value will print
+         
+        this.myname = myname;            //here this is represented as obj1
+    }
+
+    public static void main(String args[]){
+
+        hello obj1 = new hello();
+        obj1.setname("ranjani");        // setting name
+      System.out.println(obj1.myname);  //calling the name
+    }
+}
+
+
+Question no : 02
+
+
+import java.util.Scanner;
+
+class laptop{
+
+    String name = "asus";    // can create a multiple class in single file
+}
+
+class bike{
+
+    int price = 1000;
+}
+
+public class hello{
+
+    public static void main(String args[]){
+
+        laptop l1 = new laptop(); 
+        System.out.println(l1.name);           //for laptop class we can use only a "laptop" obj name  to get or print a value
+
+        bike b1 = new bike();
+        System.out.println(b1.price);
+    }
+
+}
+
