@@ -1,0 +1,360 @@
+///************inheritance ***************///
+
+//Inheritance  means a child class can use the properties and methods of a parent class. It helps us reuse code and is done using the extends keyword.
+
+Question no : 01
+
+import java.util.Scanner;
+
+class dad{
+
+    int money = 200;
+
+}
+
+class son extends dad{    //use "extends" keyword to use the properties of other class
+
+}
+
+public class hello{
+
+    public static void main(String args[]){
+
+        son s1 = new son();
+        System.out.println(s1.money);
+    }
+}
+
+
+
+  //**********single inheritance**********/
+
+//single child class inherits the properties and methods from only one parent class.
+
+Question no : 02
+
+import java.util.Scanner;
+
+class Animal{      //super class or base class or parent class
+
+    void eat(){
+
+        System.out.println("this animal can eat");
+    }
+}
+class Dog extends Animal{   //derived class
+
+    void bark(){
+
+        System.out.println("Barks");
+    }
+}
+public class hello{
+    public static void main(String args[]){
+
+        Dog d1 = new Dog(); //creating obj for dog
+        d1.bark();   //calling bark func in dog class
+        d1.eat();    //can also access the eat func in animal class bcus using keyword "extends"
+    }
+}
+
+
+
+//***********multilevel inheritance***********//
+
+//class inherits from another class, which itself inherits from another class.
+
+
+Question no : 03
+
+import java.util.Scanner;
+
+class A{   //super class 
+
+    int one =1;
+}  
+class B extends A{  //sub class
+
+    int two = 2;
+}
+
+class C extends B{  //derived class
+
+    int three = 3;
+}
+public class hello{
+    public static void main(String args[]){
+        C ob1 = new C();
+        System.out.println(ob1.three);
+         System.out.println(ob1.two);
+          System.out.println(ob1.one); 
+       }
+}
+
+
+Question no : 04
+
+import java.util.Scanner;
+
+class Animal {
+
+    void eat(){
+
+        System.out.println("this animal eats");
+    }
+}
+
+class Dog extends Animal{
+
+    void bark(){
+
+        System.out.println("barks");
+    }
+}
+class puppy extends Dog{
+
+    void weeps(){
+
+        System.out.println("weeps");
+    }
+}
+public class hello{
+    public static void main(String args[]){
+        puppy p1 =new puppy();
+        p1.eat();   //creating obj for puppy and access eat 
+    }
+}
+    
+      
+///**************hierarchical inheritance***************///
+
+//multiple child classes inherit from the same parent class
+
+Question no : 05
+
+import java.util.Scanner;
+
+class Animal{      //super class
+    void eat(){
+        System.out.println("this animal east");
+    }
+}
+class Dog extends Animal{        //sub class
+    void bark(){
+        System.out.println("barks");
+    }
+}
+class Cat extends Animal{        //sub class
+    void meow(){
+        System.out.println("meow");
+    }
+}
+
+public class hello{
+    public static void main(String args[]){
+       Cat c1 = new Cat();
+       c1.eat();
+
+    }
+}
+    
+
+//**************hybrid inheritance***********//
+
+//Hybrid inheritance is a combination of two or more types of inheritance, such as single, multilevel, or hierarchical inheritance.
+
+Question no : 06
+
+import java.util.Scanner;
+
+class Animal{                   //super class
+    void eat(){
+        System.out.println("this animal eat");
+    }
+}
+class Dog extends Animal{        //sub class
+    void bark(){
+        System.out.println("barks");
+    }
+}
+class Cat extends Animal{         //sub class
+    void meow(){
+        System.out.println("meow");
+    }
+}
+class puppy extends Dog{          //sub class
+    void weep(){
+        System.out.println("weep");
+    }
+}
+
+public class hello{
+    public static void main(String args[]){
+      puppy p1 = new puppy();
+      p1.eat();
+
+    }
+}
+
+
+
+Question no : 07
+
+/* coding challenge : Animal Kingdom
+challenge overview:
+
+you will create classes represeenting animals in zoo. 
+Start by creating a base class and then create subclasses
+for specific animal with additional
+properties and behaviors  
+
+Step 1 :
+
+create a class named Animal :
+
+Add a field called name of type String .
+Add a field called age of type int.
+Add a method(func) called makeSound() that prints
+"Animal makes a sound".
+
+
+Step 2 :
+
+Create a subclass named dog that inherits(extends) from 
+Animal:
+
+add a field called breed of type String.
+override(use the func in chid calss that already in parent class ) the makeSound() method to print "Dog barks"
+Add a method(function) called fetch() that prints "Dog is fetching"
+
+
+Step 3:
+
+Create a subclass nameed cat that inherits(extends) from Animal;
+Add a field called color of type String.
+override the makeSound() method to print "cat meows".
+add a method(func) called climb() that prints "cat is climbing".
+*/
+
+
+
+import java.util.Scanner;
+class Animal{             //patent class
+    String name;
+    int age;
+
+    void makeSound(){
+        System.out.println("Animal makes sound");
+    }
+}
+class Dog extends Animal{
+    String breed;
+
+    //override
+    void makeSound(){
+        System.out.println("dog barks");
+    }
+    void fetch(){
+        System.out.println("Dog is fetching");
+    }
+}
+class Cat extends Animal{
+    String color;
+
+    //override
+    void makeSound(){
+        System.out.println("Cat meows");
+    }
+    void climb(){
+        System.out.println("Cat is climbing");
+    }
+}
+public class hello{
+    public static void main(String args[]){
+      Dog d1 = new Dog();
+      d1.name = "rio"; //in parent class
+      d1.age = 1; //in parent class
+      d1.breed = "normal";
+      d1.makeSound();
+      d1.fetch();
+
+      Cat c1 = new Cat();
+      c1.name = "ruby";
+      c1.age= 2;
+      c1.color = "white";
+      c1.makeSound();
+      c1.climb();
+    }
+}
+
+Question no : 08
+
+ /*
+ 1. Create a superclass named vechicle with field brand and yr , and a method startEngine()
+   2.Create a subclass named car that inherits from vechicle
+   3.Add a field called fuleType of type string to the car class
+   4.override the startengine() method in the car class to print "Car engine to Start"
+   5.add a method called drive() to the car class to print "Car is driving".
+   6.create a truck subclass that also inherits from the vechicle class
+   7.add a field called loadCapacity of type int to the truck class
+   8.override the startengine() method in the truck class to print "truck engine start".
+   9.add a method called haul() to the truck class that print "truck is hauling".
+*/
+   
+   
+
+import java.util.Scanner;
+
+class Vechicle{
+    String brand ;
+    int year;
+
+    void startengine(){
+
+    }
+}
+class car extends Vechicle{
+    String fuletype;
+    
+    void startengine(){
+        System.out.println("Car engine to start");
+    }
+    void drive(){ 
+        System.out.println("Car is driving");
+    }
+    
+}
+class truck extends Vechicle{
+    int loadCapacity;
+
+    void startengine(){
+        System.out.println("truck engine starts");
+    }
+
+    void haul(){
+        System.out.println("truck is hauling");
+    }
+}
+public class hello{
+    public static void main(String args[]){
+        car c1 = new car();
+        
+        c1.fuletype = "petorl";
+        System.out.println("fuletype :"+c1.fuletype);
+        c1.startengine();
+        c1.drive();
+       
+
+        truck t1 =new truck();
+        t1.brand = "audi";
+        t1.year = 2005;
+        t1.loadCapacity = 2;
+        System.out.println("brand :"+t1.brand);
+        System.out.println("year :"+t1.year);
+        System.out.println("loadCapacity :"+t1.loadCapacity);
+        t1.startengine();
+        t1.haul();
+    }
+}
+
+
