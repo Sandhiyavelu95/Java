@@ -1,0 +1,79 @@
+///************super keyword*************///
+
+
+/// calling the parent constructor using "super" keyword
+/// super keyword also used to call function
+
+
+Question no : 01
+
+import java.util.Scanner;
+class Animal{
+    
+    int age = 12;   //also access the field
+
+    Animal(String name)   //constructor   //3rd "super" calling Animal name = rio
+    {
+        System.out.println("animal");
+    }
+    
+    void makeSound(){            //super keyword also used to call the function
+        System.out.println("Animal make sound");
+    }
+}
+class Dog extends Animal{
+
+    Dog()  //constructor               //2nd dog obj called
+    {
+        super("rio");       //calling the animal constrctor 
+        super.makeSound();
+        System.out.println("Dog");
+        System.out.println(super.age);
+    }
+}
+public class hello{
+    public static void main(String args[]){
+        Dog d1 = new Dog();              //1st obj created      //while creating a obj for dog automatically dof constructor was called
+        
+    }
+}
+
+Question no : 02
+
+/* Create a superclass named person with a field name and a 
+parameterized constructor to initialize it. create a subclass named
+employee that inherits from person and adds a field employeeid
+use the super keyword in the employee constructor to call the 
+person constructor and initialize the name field . additionally
+create a method in employee to display the details of the
+employee. 
+*/
+
+import java.util.Scanner;
+
+class person{
+    String name;
+
+    person( String name){
+        this.name = name;
+    }
+}
+class employee extends person{
+    int employeeid;
+
+    employee(String name){
+        super(name);
+    }
+
+    void employee(){
+        System.out.println();
+    }
+}
+public class hello{
+    public static void main(String args[]){
+        employee e1 = new employee("kokila");
+        
+
+    }
+}
+
